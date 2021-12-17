@@ -6,6 +6,7 @@
 </template>
 
 <script lang="ts">
+import { ColorPicker, ColorPanel } from 'one-colorpicker';
 import { Options, Vue } from "vue-class-component";
 import { colorPalette } from "../controller/API/colorPalettes";
 

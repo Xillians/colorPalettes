@@ -1,5 +1,8 @@
 <template>
-  asd
+  <v-color-picker
+    dot-size="25"
+    switch-max-height="200"
+  />
   <h2>{{ hexValue }}</h2>
   <button id="find" @click="getColorPalette">get color palette</button><br />
   {{ colorData }}

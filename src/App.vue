@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <img alt="logo" src="./assets/logo.png" class="logo"/>
+  <HelloWorld msg="color palettes!" />
 </template>
 
 <script lang="ts">
@@ -23,5 +23,9 @@ export default class App extends Vue {}
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.logo {
+    width:  150px;
+    height: 100px;
 }
 </style>

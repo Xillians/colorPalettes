@@ -1,16 +1,21 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <ColorMain />
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import ColorMain from "./ColorMain.vue";
 
 @Options({
   props: {
     msg: String,
   },
+  components: {
+    ColorMain
+  }
 })
 export default class HelloWorld extends Vue {
   msg!: string;

@@ -1,13 +1,8 @@
 import axios from "./axios";
 
 export class colorPalette {
-    public hexValue: number;
-
-    constructor(hexValue: number) {
-        this.hexValue = hexValue;
-    }
-    public async GET_schemes(mode?: string, count?: number) {
-        let url = `/scheme?hex=${this.hexValue}`;
+    public async GET_schemes(hexValue: string, mode?: string, count?: number) {
+        let url = `/scheme?hex=${hexValue}`;
         if(mode) url += `&mode=${mode}`;
         if(count) url += `&count=${count}`;
 
